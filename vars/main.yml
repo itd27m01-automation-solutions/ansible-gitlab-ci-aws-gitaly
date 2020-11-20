@@ -1,0 +1,20 @@
+---
+gitlab_config: "/etc/gitlab/gitlab.rb"
+gitlab_ctl: "/usr/bin/gitlab-ctl"
+
+gitlab_gitaly_dependencies:
+  - curl
+  - gnupg
+  - apt-transport-https
+  - openssh-server
+  - ca-certificates
+  - tzdata
+  - postfix
+  - parted
+
+gitlab_packages:
+  - gitlab-ee
+
+gitlab_gitaly_datadir: "/var/opt/gitlab/git-data"
+
+gitlab_gitaly_disk: "/dev/xvdh"
