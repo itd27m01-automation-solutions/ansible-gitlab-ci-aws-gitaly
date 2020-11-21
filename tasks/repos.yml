@@ -1,0 +1,10 @@
+---
+- name: Add an Apt signing key
+  apt_key:
+    url: https://packages.gitlab.com/gitlab/gitlab-ee/gpgkey
+    state: present
+
+- name: Add gitlab repository into sources list
+  apt_repository:
+    repo: deb https://packages.gitlab.com/gitlab/gitlab-ee/ubuntu/ focal main
+    state: present

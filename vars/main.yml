@@ -15,6 +15,5 @@ gitlab_gitaly_dependencies:
 gitlab_packages:
   - gitlab-ee
 
-gitlab_gitaly_datadir: "/var/opt/gitlab/git-data"
-
 gitlab_gitaly_disk: "/dev/xvdh"
+gitlab_gitaly_datadir: "/var/opt/gitlab/git-data"

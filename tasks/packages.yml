@@ -1,0 +1,11 @@
+---
+- name: Install dependencies
+  apt:
+    name: "{{ gitlab_gitaly_dependencies }}"
+    state: present
+
+- name: Install gitlab-ee package
+  apt:
+    name: "{{ gitlab_packages }}"
+    state: present
+    update_cache: yes
