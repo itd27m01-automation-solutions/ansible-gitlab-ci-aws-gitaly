@@ -1,10 +1,4 @@
 ---
-- name: gitlab_reconfigure
-  command:
-    cmd: "{{ gitlab_ctl }} reconfigure"
-  async: 300
-  poll: 20
-
 - name: gitlab_restart
   command:
     cmd: "{{ gitlab_ctl }} restart"
